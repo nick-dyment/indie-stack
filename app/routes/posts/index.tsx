@@ -13,7 +13,7 @@ export const loader = async () => {
 };
 
 export default function Posts() {
-    const { posts } = useLoaderData() as LoaderData;
+    const { posts } = useLoaderData<typeof loader>();
     return (
         <main>
             <h1>Posts</h1>
